@@ -22,12 +22,13 @@ body {
 
 .card {
     background-color: var(--white);
-    max-width: 384px;
-    border-radius: 20px;
-    border: 1px solid var(--gray-950);
-    box-shadow: 8px 8px 0px 0px var(--gray-950);
+    width: min(90%, 24rem);
+    border-radius: 1.25rem;
+    border: 0.0625rem solid var(--gray-950);
+    box-shadow: 0.5rem 0.5rem 0rem 0rem var(--gray-950);
     padding: 1.5rem;
-    margin: 3rem auto;
+    margin-block: 3rem;
+    margin-inline: auto;
 }
 
 .preview-card-image {
@@ -37,30 +38,32 @@ body {
 }
 
 .preview-card-image img {
-    border-radius: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 0.625rem;
 }
 
 .preview-card-text {
-    margin-top: 1.5rem;
+    margin-block-start: 1.5rem;
 }
 
 .yellow-bg {
     background-color: var(--yellow);
-    padding: 4px 12px;
-    border-radius: 4px;
-    width: 90px;
+    padding-block: 0.25rem;
+    padding-inline: 0.75rem;
+    border-radius: 0.25rem;
+    width: 5.625rem;
 }
 
 .yellow-bg .category {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 800;
 }
 
 .date {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-block: 0.8rem;
 }
 
 a {
@@ -69,10 +72,9 @@ a {
 }
 
 .card-post-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-block: 0.8rem;
 }
 
 .card-post-title:hover {
@@ -81,10 +83,10 @@ a {
 
 .description {
     color: var(--gray-500);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
-    margin-bottom: 0.8rem;
+    margin-block-end: 0.8rem;
 }
 
 .author {
@@ -94,13 +96,13 @@ a {
 }
 
 .author img {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .author .name {
-    margin-left: 0.8rem;
-    font-size: 14px;
+    margin-inline-start: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 800;
 }
 
@@ -113,15 +115,4 @@ a {
 
 .attribution a {
     color: var(--white);
-}
-
-@media screen and (max-width: 500px) {
-    .card {
-        width: 90%;
-        margin: 2rem auto;
-    }
-
-    .preview-card-image img {
-        width: 100%;
-    }
 }
