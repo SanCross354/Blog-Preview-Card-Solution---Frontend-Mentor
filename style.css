@@ -22,8 +22,7 @@ body {
 
 .card {
     background-color: var(--white);
-    width: 384px;
-    height: 565px;
+    max-width: 384px;
     border-radius: 20px;
     border: 1px solid var(--gray-950);
     box-shadow: 8px 8px 0px 0px var(--gray-950);
