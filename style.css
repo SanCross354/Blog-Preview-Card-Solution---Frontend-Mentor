@@ -51,7 +51,7 @@ body {
     width: 90px;
 }
 
-.yellow-bg h4 {
+.yellow-bg .category {
     font-size: 14px;
     font-weight: 800;
 }
@@ -98,10 +98,21 @@ a {
     height: 32px;
 }
 
-.author h4 {
+.author .name {
     margin-left: 0.8rem;
     font-size: 14px;
     font-weight: 800;
+}
+
+.attribution {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--white);
 }
 
 @media screen and (max-width: 500px) {
